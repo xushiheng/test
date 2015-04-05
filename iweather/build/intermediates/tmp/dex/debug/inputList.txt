@@ -1,0 +1,5 @@
+C:\Users\leon Xu\Desktop\learngit\UIDemos\iweather\build\intermediates\classes\debug
+C:\Users\leon Xu\Desktop\learngit\UIDemos\iweather\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-f4f082b9d390bccb925875556f6a3110107b7e93.jar
+C:\Users\leon Xu\Desktop\learngit\UIDemos\iweather\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-ae8d1783611b43fa4341590e1680b508d2187f26.jar
+C:\Users\leon Xu\Desktop\learngit\UIDemos\iweather\build\intermediates\pre-dexed\debug\classes-53ea8a03c9c165e9edcd880d6f35c0380145c65f.jar
+C:\Users\leon Xu\Desktop\learngit\UIDemos\iweather\build\intermediates\pre-dexed\debug\classes-f6a314ad88887963829d4b099c62b29da5d6680d.jar

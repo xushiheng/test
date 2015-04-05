@@ -8,7 +8,14 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#48f">
-
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/switch_city"
+            android:background="@drawable/home"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -17,6 +24,14 @@
             android:textSize="30sp"
             android:text="地区"
             android:textColor="#fff"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/refresh_weather"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/refresh"/>
     </RelativeLayout>
 
     <RelativeLayout
