@@ -19,7 +19,7 @@
         </activity>
         <activity
             android:name=".activity.WeatherActivity"
-            android:launchMode="singleTop"/>
+            android:launchMode="singleTask"/>
 
         <service android:name=".service.AutoUpdateService"/>
         <service android:name=".service.NotificationService"/>

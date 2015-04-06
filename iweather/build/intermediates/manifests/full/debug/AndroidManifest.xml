@@ -27,7 +27,7 @@
         </activity>
         <activity
             android:name="com.iweather.app.activity.WeatherActivity"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTask" />
 
         <service android:name="com.iweather.app.service.AutoUpdateService" />
         <service android:name="com.iweather.app.service.NotificationService" />

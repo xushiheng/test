@@ -9,6 +9,7 @@ import android.os.IBinder;
 import android.preference.PreferenceManager;
 
 import com.iweather.app.R;
+import com.iweather.app.activity.ChooseAreaActivity;
 import com.iweather.app.activity.WeatherActivity;
 
 /**
@@ -33,7 +34,7 @@ public class NotificationService extends Service {
         String weatherDesp = prefs.getString("weather_desp", "");
         String temp1 = prefs.getString("temp1", "");
         String temp2 = prefs.getString("temp2", "");
-        Intent notificationIntent = new Intent(this, WeatherActivity.class);
+        Intent notificationIntent = new Intent(this, ChooseAreaActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this,0,notificationIntent,0);
         Notification notification = new Notification.Builder(this).setAutoCancel(true)
                 .setSmallIcon(R.drawable.notification).setContentTitle(cityName).setContentText
