@@ -12,19 +12,27 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/app_weather"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.iweather.app.activity.ChooseAreaActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.iweather.app.activity.WeatherActivity" />
+        <activity
+            android:name="com.iweather.app.activity.WeatherActivity"
+            android:launchMode="singleTop" />
+
+        <service android:name="com.iweather.app.service.AutoUpdateService" />
+        <service android:name="com.iweather.app.service.NotificationService" />
+
+        <receiver android:name="com.iweather.app.receiver.AutoUpdateReceiver" />
     </application>
 
 </manifest>

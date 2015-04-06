@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.iweather.app.R;
 import com.iweather.app.service.AutoUpdateService;
+import com.iweather.app.service.NotificationService;
 import com.iweather.app.util.HttpCallbackListener;
 import com.iweather.app.util.HttpUtil;
 import com.iweather.app.util.Utility;
@@ -124,6 +125,8 @@ public class WeatherActivity extends Activity implements Button.OnClickListener{
         //绑定自动更新的服务
         Intent intent = new Intent(this, AutoUpdateService.class);
         startService(intent);
+        Intent intent1 = new Intent(this, NotificationService.class);
+        startService(intent1);
     }
 
     @Override
