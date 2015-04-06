@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.iweather.app.R;
+import com.iweather.app.service.AutoUpdateService;
 import com.iweather.app.util.HttpCallbackListener;
 import com.iweather.app.util.HttpUtil;
 import com.iweather.app.util.Utility;
@@ -120,6 +121,9 @@ public class WeatherActivity extends Activity implements Button.OnClickListener{
         currentDateText.setText(prefs.getString("current_date",""));
         weatherInfoLayout.setVisibility(View.VISIBLE);
         cityNameText.setVisibility(View.VISIBLE);
+        //绑定自动更新的服务
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 
     @Override
